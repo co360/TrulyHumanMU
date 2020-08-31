@@ -248,15 +248,15 @@ button {
           margin-top: 4rem;
         }}
 
-    h1{
+    .headline{
       font-size: 2rem;
       margin-left: 1rem;
     }
    
     @media only screen and (min-width: 769px) {
-      h1{
-         font-size: 3rem;
+      .headline{
          margin-left: 0rem;
+         font-size: 3rem;
         }}
 
     .newArrivals{
@@ -322,7 +322,7 @@ button {
     }
 
 
-    h2{
+    h4{
       margin-top: -1rem;
       font-size: 1.2rem;
       line-height: 1.5;
@@ -331,7 +331,7 @@ button {
     }
 
     @media only screen and (min-width: 769px) {
-      h2{
+      h4{
         font-size: 1.5rem;
         line-height: 2;
         margin-left: 0rem;
@@ -380,13 +380,6 @@ button {
           .story {
             margin-right: 0.5rem;
           }}
-
-        
-          @media only screen and (min-width: 769px) {
-            .storyh1 {
-            margin-top: 3.5rem;
-            }}  
-
 
             .storyPic{
               max-width: 100%;
@@ -441,13 +434,13 @@ button {
             text-align: center;
             }
 
-        h3{
+        h6{
           font-family: 'Playfair Display', serif;
         }
 
 
         @media only screen and (min-width: 769px) {
-          h3 {
+          h6 {
            font-size: 2rem;
           }}
 
