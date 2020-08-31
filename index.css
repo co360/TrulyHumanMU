@@ -8,12 +8,12 @@ body{
 body ::-webkit-scrollbar {
   width: 6px;
   border-radius: 0;
-  background: #ffffff;
+  background: gray;
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 0;
-  background:  #ffffff;
+  background:  #e7e7e7;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -23,7 +23,7 @@ body ::-webkit-scrollbar {
 ::-webkit-scrollbar{
   height: 6px;
   width: 6px;
-  background:  #ffffff;
+  background:  #e7e7e7;
 }
 ::-webkit-scrollbar-thumb:horizontal{
   background: #000000;
@@ -59,6 +59,7 @@ font-family: 'Playfair Display', serif;
 font-weight: 100;
 font-size: 4rem;
 letter-spacing: -0.8rem;
+cursor: default;
 }
 
 @media only screen and (min-width: 769px) {
@@ -66,7 +67,7 @@ letter-spacing: -0.8rem;
     font-size: 6rem;
     padding-left: 8rem;
     letter-spacing: -1.3rem;
-    margin-top: -1.3rem;
+    margin-top: -1.4rem;
     }}
     
 .bag{
@@ -132,15 +133,12 @@ button {
     grid-auto-flow: row;
     grid-row: 2;
     grid-column: 3 span;
-    width: 80%;
     height: auto;
     background-color: white;
     z-index: 1;
     color: white;
     justify-self: end;
     text-align: right;
-    /* justify-self: center;
-    text-align: center; */
     overflow-y: auto;
 }
 
@@ -153,6 +151,9 @@ button {
     justify-self: end;
 }
 
+.category:hover{
+  text-decoration: underline;
+}
 
 .category.big{
     font-size: 2rem;
@@ -175,6 +176,7 @@ button {
     display: flex;
     overflow: hidden;
     justify-content: center;
+    max-height: 100vh;
 }
 
   .fade {
@@ -202,20 +204,26 @@ button {
     align-self: flex-end;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     background: rgba(26, 7, 7, 0.46);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem !important;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     cursor: pointer;
+    text-decoration: none;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
   }
 
+  .shopNow:hover{
+    font-size: 3.1rem;
+  }
+
   @media only screen and (min-width: 769px) {
     .shopNow {
-        font-size: 5rem;
+        font-size: 3em;
         margin-bottom: 2rem;
         margin-top: -2rem;
     }}
@@ -241,13 +249,14 @@ button {
         }}
 
     h1{
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-left: 1rem;
     }
    
     @media only screen and (min-width: 769px) {
       h1{
-         font-size: 4rem;
+         font-size: 3rem;
+         margin-left: 0rem;
         }}
 
     .newArrivals{
@@ -315,7 +324,7 @@ button {
 
     h2{
       margin-top: -1rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       line-height: 1.5;
       margin-left: 1rem;
       margin-right: 1rem;
@@ -323,14 +332,14 @@ button {
 
     @media only screen and (min-width: 769px) {
       h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2;
         margin-left: 0rem;
       }}
 
     p3{
       justify-self: center;
-      font-size: 1rem;
+      font-size: 1.1rem;
       line-height: 1.5;
       text-align: justify;
       margin-left: 1rem;
@@ -340,7 +349,7 @@ button {
  @media only screen and (min-width: 769px) {
   p3{
     justify-self: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-align: justify;
     margin-left: 0rem;
@@ -352,6 +361,7 @@ button {
       display: flex;
       flex-flow: column;
       justify-content: center;
+      width: 100%;
     }
 
     @media only screen and (min-width: 769px) {
@@ -377,6 +387,11 @@ button {
             margin-top: 3.5rem;
             }}  
 
+
+            .storyPic{
+              max-width: 100%;
+            }
+
       @media only screen and (min-width: 769px) {
         .storyPic {
          width: 39.5rem;
@@ -388,13 +403,11 @@ button {
           position: absolute;
           background: rgba(26, 7, 7, 0.46);
           border:none;
-          padding-left: 1rem;
-          padding-right: 1rem;
           padding-top: 1rem;
           padding-bottom: 1rem;
           text-align: center;
-          margin-left: 0.3rem;
-          margin-right: 0.3rem;
+          width: 95% !important;
+          width: 100%;
         }
 
 
@@ -402,12 +415,7 @@ button {
           .storyText {
             margin-left: -0rem;
             margin-right: -0rem;
-            width: 37.5rem;
-          }}
-
-        @media only screen and (min-width: 769px) {
-          .storyPic {
-           width: 39.5rem;
+            width: 39.5rem !important;
           }}
         
         p4{
@@ -417,7 +425,7 @@ button {
 
         @media only screen and (min-width: 769px) {
           p4 {
-           font-size: 1.5rem;
+           font-size: 1.2rem;
           }}
 
 
