@@ -163,8 +163,19 @@ icon {
     color: white;
     justify-self: end;
     text-align: right;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
+
+@media only screen and (min-width: 769px) {
+  .menuLinks.show {
+    overflow-y: hidden;
+  }}
+
+@media only screen and (min-width: 769px) {
+  .searchCat {
+     display: none;
+  }}
+
 
 .category{
     color: black;
