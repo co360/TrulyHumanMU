@@ -82,16 +82,26 @@ cursor: default;
   background-image: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1598968851/TrulyHuman/icons8-search-50_zly142.png");
 }
 
+@media only screen and (min-width: 769px) {
+  .search{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    }}
+
+    @media only screen and (max-width: 768px) {
+      .search{
+       display:none;
+        }}
+
 .icons{
-  align-self: start;
-  justify-self: end;
+  align-self: center;
+  justify-self: center;
   width: 28px;
   height: 28px;
   border: none;
   cursor: pointer;
   background-color: transparent;
   background-size: 100%;
-  margin-right: 1em; 
   margin-top: 0.5rem;
 }
 
@@ -99,10 +109,6 @@ cursor: default;
   .icons{
     width: 50px;
     height: 50px;
-    margin-left: 1rem;
-    margin-right: 3rem;
-    margin-top: 0rem;
-    align-self: center;
     }}
 
 icon {  
@@ -122,8 +128,9 @@ icon {
     background-color: transparent;
     background-image: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1598626455/TrulyHuman/icons8-menu-50_zb4bpt.png");
     background-size: 100%;
-    align-self: start;
+    align-self: center;
     margin-top: 0.5rem;
+    margin-left: 1rem;
 }
 
 @media only screen and (min-width: 769px) {
@@ -131,6 +138,7 @@ icon {
         width: 50px;
         height: 50px; 
         margin-right: 8rem; 
+        margin-left: 0rem;
         align-self: center;
         margin-top: 0rem;
     }}
