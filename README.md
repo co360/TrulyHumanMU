@@ -5,3 +5,6 @@ It was developed mobile-first approach. Accessibility and an easily flowing UX w
 The pictures were chosen to represent a diverse set of people for a brand that offers size-inclusive and gender-fluid clothing for at a mid-price point. The target audience prioritises ethical production as well as high quality. 
 
 The page is composed of HTML, CSS and Vanilla JavaScript.
+
+This project is my own and not based on a tutorial.
+
