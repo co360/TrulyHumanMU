@@ -65,11 +65,16 @@ cursor: default;
 @media only screen and (min-width: 769px) {
     .logo {
     font-size: 6rem;
-    padding-left: 8rem;
+    padding-left: 9rem;
     letter-spacing: -1.3rem;
     margin-top: -1.4rem;
     }}
     
+    @media only screen and (max-width: 400px) {
+      .logo {
+      padding-left:4rem;
+      }}
+
 .bag{
   grid-column: 3;
   grid-row: 1;
@@ -143,6 +148,11 @@ icon {
         margin-top: 0rem;
     }}
     
+    @media only screen and (max-width: 1000px) {
+      .menubtn {
+  
+      margin-right: 3rem;
+      }}
 
 .closeMenubtn{
     background-image: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1598626695/TrulyHuman/icons8-delete-50_ktz84m.png");  
